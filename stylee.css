@@ -1,0 +1,789 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  color: white;
+  background-image: linear-gradient(60deg, #081b29 0%, #081b29e8 100%);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Roboto, sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+
+}
+
+p {
+  font-size: 1.25em;
+  font-style: italic;
+
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.25em;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+#contact {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.scrol {
+  height: 100px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.color {
+  color: rgb(18, 251, 29);
+
+}
+
+.color:hover {
+  color: rgb(110, 255, 118);
+
+}
+
+/*nav bar*/
+
+
+header p:hover {
+  color: rgb(18, 251, 29);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  background-color: #081b29d9;
+  max-width: 100%;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 10px 8px;
+  width: 100%;
+}
+
+header a:hover {
+  color: rgb(18, 251, 29);
+}
+
+header .logo {
+  margin: 0;
+  font-weight: bold;
+}
+
+header img {
+  height: 40px;
+}
+
+header img:hover {
+  height: 40px;
+  background-image: linear-gradient(60deg, #081b29 0%, #081b2976 100%);
+
+}
+
+header img:hover {
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.503);
+}
+
+/* first page */
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .image {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
+#home .text {
+  padding: 10px;
+}
+
+#home img {
+  width: 180px;
+  border-radius: 100%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.396);
+}
+
+#home h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  text-align: center;
+}
+
+#home p {
+  text-align: justify;
+  width: 90%;
+  font-size: 1.5em;
+}
+
+#home .cont{
+display: flex;
+justify-content: center;
+}
+
+#home h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 3em;
+  text-align: center;
+
+}
+
+#home h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 2.2em;
+  text-align: center;
+
+}
+
+/* second page */
+
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+#about .container {
+  padding: 10px;
+}
+
+#about h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 2.2em;
+  text-align: center;
+}
+
+#about p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  width: 90%;
+  font-size: 1.5em;
+}
+
+#about .cont{
+  display: flex;
+  justify-content: center;
+  }
+
+/* third page */
+
+#skills {
+  display: flex;
+  justify-content: center;
+}
+
+#skills a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+#skills .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#skills .logo {
+  width: 30px;
+  height: 30px;
+}
+
+#skills .title a {
+  padding: 4px;
+  text-align: center;
+}
+
+#skills h3 {
+  font-size: 2.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+#skills h4 {
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+#skills h1 {
+  text-align: center;
+}
+
+#skills h2 {
+  text-align: center;
+}
+
+#skills i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills img {
+  width: 50%;
+}
+
+#skills .container-lenguages .text img {
+  height: 30px;
+  width: auto;
+}
+
+
+#skills .fa-brands {
+  font-size: 2.5em;
+  color: white;
+  padding: 10px;
+}
+
+#skills .fa {
+  width: 60px;
+}
+
+#skills .container-lenguages {
+  border-radius: 10px;
+  padding: 5px;
+  margin: 20px 20px;
+}
+
+#skills .container-lenguages .text {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.396);
+  padding: 10px;
+  border-radius: 20px;
+  width: 80%;
+  background-image: linear-gradient(60deg, #081b29 0%, #081b2900 100%);
+}
+
+#skills .container-lenguages .text:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.549);
+}
+
+#skills .container-lenguages .container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+}
+
+#skills .container-lenguages .container h3 {
+  color: rgb(18, 251, 29);
+  text-align: center;
+}
+
+#skills .container-lenguages .container a {
+  padding: 10px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.pathway-parragraph {
+  padding: 10px;
+  width: 90%;
+  text-align: justify;
+
+}
+
+.container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.titulebyu {
+  color: red;
+  margin: 0;
+}
+
+#skills .lenguage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+  text-align: none;
+}
+
+
+/* second on skills page*/
+
+#skills .container-diploma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills .container-diploma img {
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.396);
+}
+
+#skills .container-diploma .container-idioms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#skills .container-idioms h1 {
+  font-size: 2.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#skills .container-idioms h2 {
+  font-size: 1.8em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+#skills .container-idioms h3 {
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 50px;
+
+}
+
+/* forfh page */
+
+
+#experience {
+  padding: 15px;
+  font-size: 1.3em;
+}
+
+
+#experience span:hover {
+  color: rgb(166, 250, 171);
+}
+
+#experience span:active {
+  color: white;
+}
+
+#experience h3 {
+  font-size: 2.2em;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#experience h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+#experience .text h5 {
+  font-size: 1.1em;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#experience .container h2 {
+  font-size: 1.8em;
+}
+
+#experience .text a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4em;
+  width: 90%;
+
+}
+
+
+#experience .text p {
+  width: 90%;
+  text-align: justify;
+}
+
+#experience .container .cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* fifht page */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+#contact .container {
+  background-image: linear-gradient(60deg, #081b29 0%, #081b2992 100%);
+  border-radius: 20px;
+  padding: 20px 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.396);
+}
+
+#contact .container:hover {
+  background-color: rgba(0, 0, 0, 0.183);
+}
+
+#contact .container h3 {
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+
+}
+
+#contact .inputs input {
+  width: 100%;
+  padding: 10px;
+  font-size: 0.5em;
+  border-radius: 8px;
+}
+
+#contact .tarea textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  font-size: 0.5em;
+  border-radius: 10px;
+  font-size: 0.7em;
+
+}
+
+#contact .inputs {
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .tarea {
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.boton button {
+  padding: 8px;
+  width: 80px;
+  border-radius: 8px;
+  background-color: rgb(18, 251, 29);
+  color: rgb(22, 22, 22);
+  font-size: 0.5em;
+}
+
+.boton button:hover {
+  color: black;
+  background-color: rgb(110, 255, 118);
+
+
+}
+
+.boton button:active {
+  background-color: rgb(167, 245, 171);
+  color: black;
+}
+
+#contact .container .boton a {
+  text-decoration: none;
+  color: #081b29;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  max-width: 100%;
+
+}
+
+hr{
+  width: 60%;
+  color: grey;
+}
+
+footer .redes a {
+  padding: 3px;
+  font-size: 1em;
+}
+
+footer .redes i:hover {
+  color: rgb(18, 251, 29);
+}
+
+footer h4 {
+  font-size: 1.2em;
+  color: rgb(112, 112, 112);
+
+}
+
+footer h4:hover {
+  color: rgb(18, 251, 29);
+}
+
+footer .fa-brands {
+  font-size: 2em;
+  color: rgb(112, 112, 112);
+  padding: 5px;
+}
+
+@media (min-width:800px) {
+
+
+  body {
+    font-size: 2em;
+  }
+
+  header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    background-color: #081b29d9;
+    max-width: 100%;
+  }
+
+  #skills .container-lenguages {
+    margin-top: 600px;
+
+  }
+
+  #skills .container-diploma {
+    margin-top: 20px;
+  }
+
+  #contact {
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+
+  #home {
+    margin: 0;
+  }
+
+  #home .container {
+    justify-content: center;
+    width: 100%;
+    margin-top: 120px;
+  }
+
+  #home .image {
+    margin: 0;
+  }
+
+  #home img {
+    height: 450px;
+    width: auto;
+  }
+
+  #home p {
+    width: 90%;
+    text-align: justify;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+
+  #home h1 {
+    width: 100%;
+    text-align: start;
+    justify-content: center;
+    margin: 0;
+  }
+
+  #home h4 {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    font-size: 1.2em;
+
+  }
+
+  #home h3 {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    font-size: 1.4em;
+
+  }
+
+  #about .container {
+    width: 100%;
+    margin: none;
+  }
+
+  #about p {
+    width: 90%;
+    justify-content: start;
+    text-align: justify;
+    margin-left: 20px;
+    font-size: 1.2em;
+
+  }
+
+  #skills h3 {
+    margin: 0;
+  }
+
+  #skills .container-lenguages {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+
+  #skills .container-lenguages .text img {
+    height: 50px;
+    width: auto;
+  }
+
+  #skills .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  #skills .text {
+    width: 200px;
+  }
+
+  #skills .container-diploma img {
+    width: 80%;
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+  #skills .container-idioms .text {
+    width: auto;
+  }
+
+  .pathway-parragraph {
+    width: 90%;
+    text-align: justify;
+  }
+
+  #experience .container .text p {
+    width: 90%;
+    font-size: 1em;
+    text-align: justify;
+  }
+
+  #contact .container h3 {
+    font-size: 1.8em;
+  }
+
+  #contact .container .boton {
+    width: auto;
+  }
+
+  #contact .container .boton button {
+    width: auto;
+    font-size: 0.8em;
+  }
+
+  footer h4 {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  footer .redes {
+    font-size: 0.8em;
+  }
+}
