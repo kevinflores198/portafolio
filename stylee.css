@@ -92,6 +92,7 @@ header .container {
   position: fixed;
   background-color: #081b29d9;
   max-width: 100%;
+  padding: 7px;
 }
 
 header nav {
@@ -99,12 +100,13 @@ header nav {
 }
 
 header .container .borders {
-  background-color: #09263a;
-  width: 40px;
+  background-color: #6e6e6e;
+  width: 60px;
   display: flex;
   align-items: center;
   margin-top: 9px;
-  border-radius: 20px;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 .container- {
@@ -112,6 +114,7 @@ header .container .borders {
   justify-content: center;
   align-items: center;
   position: relative;
+  padding: 10px;
 }
 
 .fa-solid {
@@ -692,6 +695,17 @@ header img:hover {
 #contact .container .boton a {
   text-decoration: none;
   color: #081b29;
+}
+
+#contact .fa-solid{
+  color: #081b29;
+  font-size: 1.2em;
+  align-items: center;
+  margin-right: 5px;
+}
+
+#contact .container h4{
+  text-align: center;
 }
 
 footer {
