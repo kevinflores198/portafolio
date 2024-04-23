@@ -548,6 +548,11 @@ header img:hover {
 
 }
 
+#contact .container h4{
+  text-decoration: none;
+  color: white;
+}
+
 #contact .inputs input {
   width: 100%;
   padding: 10px;
