@@ -67,7 +67,7 @@ html {
 }
 
 .color {
-  color: rgb(18, 251, 29);
+  color: #12fb1d;
 
 }
 
@@ -125,89 +125,6 @@ header .container .borders {
 /* con el js */
 #boton.active {
   left: 20px;
-}
-
-body.active {
-  color: #081b29;
-  background-image: linear-gradient(60deg, #ffffff 0%, #6a6c6ee8 100%);
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-
-  #home h1,
-  #about h3,
-  #skills h3,
-  #experience h3,
-  #experience a,
-  #experience .color,
-  #contact h3 {
-    color: #081b29;
-  }
-
-  #skills .container-lenguages .container h3 {
-    color: #081b29;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    color: #09263a;
-  }
-
-  h1:hover {
-    color: black;
-  }
-
-  header .container {
-    background-color: #f8f8f8ac;
-  }
-
-  header .container a {
-    color: #081b29;
-  }
-
-  header .container a:hover {
-    color: white;
-  }
-
-  #skills .container-lenguages .text {
-    background-image: linear-gradient(60deg, #ffffff 0%, #6a6c6ee8 100%);
-  }
-
-  #skills .container-lenguages .text a {
-    color: #081b29;
-  }
-
-  #skills .title a {
-    font-size: 2em;
-  }
-
-  #skills .fa-brands {
-    color: #081b29;
-  }
-
-  .color {
-    color: white;
-  }
-
-  #contact .container {
-    background-image: linear-gradient(60deg, #ffffff 0%, #6a6c6ee8 100%);
-  }
-
-  #contact .container .boton button {
-    background-color: white;
-  }
-
-  footer .fa-brands:hover,
-  footer h4:hover {
-    color: #081b29;
-  }
-  footer h4{
-    color: rgb(112, 112, 112);
-  }
-
 }
 
 header nav a {
@@ -673,7 +590,6 @@ header img:hover {
 
 .boton button {
   padding: 8px;
-  width: 80px;
   border-radius: 8px;
   background-color: rgb(18, 251, 29);
   color: rgb(22, 22, 22);
@@ -910,4 +826,88 @@ footer .fa-brands {
   footer .redes {
     font-size: 0.8em;
   }
+
+  
+body.active {
+  color: #081b29;
+  background-image: linear-gradient(60deg, #ffffff 0%, #6a6c6ee8 100%);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  #home h1,
+  #about h3,
+  #skills h3,
+  #experience h3,
+  #experience a,
+  #experience .color,
+  #contact h3 {
+    color: #081b29;
+  }
+
+  #skills .container-lenguages .container h3 {
+    color: #081b29;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: #09263a;
+  }
+
+  h1:hover {
+    color: black;
+  }
+
+  header .container {
+    background-color: #f8f8f8ac;
+  }
+
+  header .container a {
+    color: #081b29;
+  }
+
+  header .container a:hover {
+    color: white;
+  }
+
+  #skills .container-lenguages .text {
+    background-image: linear-gradient(60deg, #ffffff 0%, #6a6c6ee8 100%);
+  }
+
+  #skills .container-lenguages .text a {
+    color: #081b29;
+  }
+
+  #skills .title a {
+    font-size: 2em;
+  }
+
+  #skills .fa-brands {
+    color: #081b29;
+  }
+
+  .color {
+    color: white;
+  }
+
+  #contact .container {
+    background-image: linear-gradient(60deg, #ffffff 0%, #6a6c6ee8 100%);
+  }
+
+  #contact .container .boton button {
+    background-color: white;
+  }
+
+  footer .fa-brands:hover,
+  footer h4:hover {
+    color: #081b29;
+  }
+  footer h4{
+    color: rgb(112, 112, 112);
+  }
+
+}
 }
