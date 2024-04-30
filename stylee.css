@@ -118,7 +118,7 @@ header {
   }
 
   .fa-solid {
-    font-size: 20px;
+    font-size: 30px;
     color: rgb(255, 255, 255);
   }
 
@@ -132,10 +132,12 @@ header {
   }
 
   nav a {
+    height: 50px;
+    font-size: 1.2em;
     font-weight: bold;
     color: white;
     text-decoration: none;
-    padding: 10px 8px;
+    padding: 20px;
     width: 100%;
   }
 
@@ -181,8 +183,8 @@ header {
     padding: 10px;
   }
 
-  img {
-    width: 40%;
+  .image img {
+    width: 60%;
     border-radius: 100%;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.396);
   }
@@ -320,7 +322,7 @@ header {
   }
 
   img {
-    width: 50%;
+    width: 80%;
   }
 
   .container-lenguages .text img {
@@ -520,10 +522,10 @@ header {
   align-items: center;
   font-size: 2em;
 
+
   .container {
     background-image: linear-gradient(60deg, #081b29 0%, #081b2992 100%);
     border-radius: 20px;
-    padding: 20px 20px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.396);
   }
 
@@ -784,7 +786,7 @@ footer {
     }
 
     .container-diploma img {
-      width: 60%;
+      width: 80%;
       border-radius: 30px;
     }
 
