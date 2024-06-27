@@ -345,6 +345,32 @@ footer .fa-brands {
 }
 
 
+.arrowUp {
+  position: fixed;
+  width: 40px;
+  right: -100px;
+  bottom: 20px;
+  transition: all 0.5s;
+}
+
+.arrowUp .fa-solid {
+  background-color: rgb(253, 0, 0);
+  color: white;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.328);
+  transition: all 0.5s;
+}
+
+.arrowUp .fa-solid:hover {
+  background-color: white;
+  color: black;
+}
+
+.arrowUp .fa-solid:active {
+  background-color: rgb(249, 150, 150);
+}
 
 
 
