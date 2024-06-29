@@ -432,7 +432,6 @@ footer .fa-brands:hover {
   }
 
   #home {
-    margin-top: 50px;
     margin-bottom: 120px;
   }
 
@@ -498,6 +497,10 @@ footer .fa-brands:hover {
     padding: 20px;
     font-size: 30px;
     text-align: start;
+  }
+
+  main #contact{
+    margin: 0;
   }
 
   main #contact .container {
@@ -591,16 +594,15 @@ footer .fa-brands:hover {
 }
 
 
-body.active {}
+body.active {
 
-/*
+
   transition: 400ms;
   color: #081b29;
-  background-image: linear-gradient(60deg, #ffffff 0%, #6a6c6ee8 100%);
+  background-image: linear-gradient(60deg, #ffffff 0%, #92939578 100%);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-
   #home h1,
   #about h3,
   #skills h3,
@@ -610,6 +612,13 @@ body.active {}
   #contact h3 {
     color: #081b29;
   }
+
+  p:hover{
+    background-color: rgb(157, 157, 157);
+  }
+
+}
+/*
 
   #skills .container-lenguages .container h3 {
     color: #081b29;
