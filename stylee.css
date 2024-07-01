@@ -49,7 +49,6 @@ h3 {
 
 h4 {
   font-size: 25px;
-  padding-top: 20px;
 }
 
 .color {
@@ -180,13 +179,14 @@ h4 {
 }
 
 .boton {
-  margin: 30px;
+  margin: 10px;
   display: flex;
   padding: 10px;
   justify-content: center;
 }
 
 .boton button {
+  border: none;
   padding: 30px;
   font-size: 0.9em;
   border-radius: 20px;
@@ -220,13 +220,15 @@ button i {
 }
 
 #experience .boton .see-project {
-  padding: 10px;
+  padding: 5px;
   color: white;
   transition: .5s;
+  background-color: rgb(255, 62, 62);
+  border-radius: 20px;
+  text-align: center;
 }
 
 #experience .boton .see-project:hover {
-  border-radius: 20px;
   background-color: red;
 }
 
@@ -234,9 +236,8 @@ button i {
   background-color: rgb(255, 62, 62);
 }
 
-#prog-skills .container .title {
+#prog-skills .container .title{
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -257,6 +258,11 @@ button i {
 
 #prog-skills .container-lenguages {
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
 }
 
 #prog-skills .container-lenguages .container {
@@ -265,11 +271,12 @@ button i {
   margin-bottom: 20px;
   border-radius: 30px;
   background-color: #01090f5b;
-
+  width: 80%;
 }
 
 #prog-skills .container-lenguages .container:hover {
   background-color: #01090f;
+
 }
 
 #prog-skills .container-lenguages .text {
@@ -284,9 +291,10 @@ button i {
 }
 
 #prog-skills .container-lenguages .text a {
-  padding: 20px;
+  padding: 10px;
   font-size: 25px;
   letter-spacing: 3px;
+  text-align: center;
 }
 
 #prog-skills .container-lenguages .text i {
@@ -396,6 +404,10 @@ footer .fa-brands:hover {
 
 @media (min-width:800px) {
 
+  header .menu-options {
+    width: 30%;
+  }
+
   header #menu-options a {
     font-size: 25px;
   }
@@ -407,6 +419,15 @@ footer .fa-brands:hover {
   main #home .container .image img {
     width: 300px;
     height: auto;
+  }
+
+  main #prog-skills .container-lenguages {
+    display: flex;
+    justify-content: center;
+  }
+
+  main #prog-skills .container-lenguages .container {
+    width: 50%;
   }
 }
 
@@ -439,7 +460,7 @@ footer .fa-brands:hover {
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: center;
   }
 
@@ -459,19 +480,21 @@ footer .fa-brands:hover {
   }
 
   main #home .container .text h1 {
-    padding: 20px;
     font-size: 40px;
     justify-content: start;
   }
 
+  
+  main #home .container .text .color {
+    padding: 0;
+  }
+
   main #home .container .text h3 {
-    padding: 20px;
     font-size: 60px;
     justify-content: start;
   }
 
   main #home .container .text h4 {
-    padding: 20px;
     justify-content: start;
   }
 
@@ -483,7 +506,7 @@ footer .fa-brands:hover {
 
   main #home .container .text .paragraph p {
     padding: 0;
-    padding: 20px;
+    font-size: 24px;
     display: flex;
     text-align: start;
     justify-content: start;
@@ -499,7 +522,7 @@ footer .fa-brands:hover {
     text-align: start;
   }
 
-  main #contact{
+  main #contact {
     margin: 0;
   }
 
@@ -526,8 +549,8 @@ footer .fa-brands:hover {
   }
 
   main #experience .container .boton .see-project {
-    padding: 40px;
-    font-size: 60px;
+    padding: 5px;
+    font-size: 40px;
     transition: .5s;
     margin-top: 60px;
     margin-top: 60px;
@@ -535,14 +558,13 @@ footer .fa-brands:hover {
   }
 
   main #prog-skills .container-lenguages {
-    display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: normal;
   }
 
   main #prog-skills .container-lenguages .container {
-    gap: 40px;
-    width: 350px;
-    background-color: rgba(255, 255, 255, 0);
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   main #prog-skills .container-lenguages .container h3 {
@@ -595,14 +617,13 @@ footer .fa-brands:hover {
 
 
 body.active {
-
-
   transition: 400ms;
   color: #081b29;
   background-image: linear-gradient(60deg, #ffffff 0%, #92939578 100%);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+
   #home h1,
   #about h3,
   #skills h3,
@@ -613,75 +634,132 @@ body.active {
     color: #081b29;
   }
 
-  p:hover{
-    background-color: rgb(157, 157, 157);
-  }
-
-}
-/*
-
-  #skills .container-lenguages .container h3 {
+  .color {
     color: #081b29;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    color: #09263a;
+  p:hover {
+    background-color: rgba(157, 157, 157, 0.732);
   }
 
-  h1:hover {
+  header .available {
+    color: white;
+  }
+
+  header .available:hover {
     color: black;
   }
 
-  header .container {
-    background-color: #f8f8f8ac;
+  header .buttons {
+    padding: 15px;
+    color: black;
+    background-color: #c3c3c3;
   }
 
-  header .container a {
-    color: #081b29;
+  header .menu-options {
+    background-color: #c3c3c3;
   }
 
-  header .container a:hover {
+  header nav .menu-options ul li {
+    position: relative;
+    list-style: none;
+    padding: 30px;
+  }
+
+  header .menu-options a {
+    color: rgb(46, 46, 46);
+  }
+
+  header .menu-options a:hover {
+    border-radius: 15px;
+    letter-spacing: 5px;
+    background-color: #cccccc;
+  }
+
+  .boton button {
+    color: rgb(22, 22, 22);
+    background-color: rgb(255, 255, 255);
+  }
+
+  .boton button:hover {
+    background-color: rgb(189, 189, 189);
+  }
+
+  .boton button:active {
+    background-color: rgb(219, 219, 219);
+  }
+
+  #experience .boton .see-project {
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    background-color: #cccccc;
+  }
+
+  #experience .boton .see-project:hover {
+    border-radius: 20px;
+    background-color: #c3c3c3;
+  }
+
+  #experience .boton .see-project:active {
+    background-color: rgb(255, 255, 255);
+  }
+
+  #prog-skills .container .title a {
+    color: #09141c;
+  }
+
+  #prog-skills .container-lenguages .container {
+    background-color: #01090f5b;
+
+  }
+
+  #prog-skills .container-lenguages .container:hover {
+    background-color: #c3c3c3;
+  }
+
+  #prog-skills .container-lenguages .text h3 {
+    font-size: 40px;
     color: white;
   }
 
-  #skills .container-lenguages .text {
-    background-image: linear-gradient(60deg, #ffffff 0%, #6a6c6ee8 100%);
-  }
-
-  #skills .container-lenguages .text a {
-    color: #081b29;
-  }
-
-  #skills .title a {
-    font-size: 2em;
-  }
-
-  #skills .fa-brands {
-    color: #081b29;
-  }
-
-  .color {
+  #prog-skills .container-lenguages .text a {
     color: white;
   }
 
-  #contact .container {
-    background-image: linear-gradient(60deg, #ffffff 0%, #6a6c6ee8 100%);
+  #prog-skills .container-lenguages .text i {
+    color: white;
   }
 
-  #contact .container .boton button {
-    background-color: white;
+  #studies .title h4 a {
+    color: #09141c;
   }
 
-  footer .fa-brands:hover,
-  footer h4:hover {
-    color: #081b29;
+  #studies .paragraph a {
+    color: rgb(113, 113, 113);
   }
 
-  footer h4 {
-    color: rgb(112, 112, 112);
+  #studies .paragraph a:hover {
+    color: #fafafa;
   }
- */
+
+  footer .fa-brands {
+    color: #787878;
+  }
+
+  footer .fa-brands:hover {
+    color: #c3c3c3;
+  }
+
+  .arrowUp .fa-solid {
+    background-color: #ff0000;
+    color: #ffffff;
+  }
+
+  .arrowUp .fa-solid:hover {
+    background-color: #ee7777;
+  }
+
+  .arrowUp .fa-solid:active {
+    background-color: rgb(255, 255, 255);
+  }
+}
